@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF to JPEG Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- PDF.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js"></script>
+  <!-- FileSaver.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <!-- JSZip CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📄 PDF → 🖼️ JPEG Converter</h1>
+    <p class="subtitle">Upload your PDF and instantly convert pages into JPEG images.</p>
+
+    <div class="upload-box">
+<input type="file" id="pdfUpload" accept="application/pdf" multiple>
+      <button id="convertBtn">Convert</button>
+
+      <!-- Save option dropdown -->
+      <select id="saveOption">
+        <option value="normal">Save as Images</option>
+        <option value="zip">Save as ZIP</option>
+      </select>
+
+      <button id="saveBtn">Save</button>
+    </div>
+
+    <div id="progress"></div>
+    <div id="output" class="gallery"></div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
